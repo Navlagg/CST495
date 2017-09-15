@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Qy8-wk-gec">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -42,9 +42,6 @@
                                         <state key="normal" title="Exotics">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <action selector="exoticToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hqk-ie-qWJ"/>
-                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="muscle" translatesAutoresizingMaskIntoConstraints="NO" id="lSo-Dq-j1E" userLabel="muscleImage">
                                         <rect key="frame" x="20" y="223" width="240" height="128"/>
@@ -56,9 +53,6 @@
                                         <state key="normal" title="Muscle">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <action selector="muscleToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hmg-tX-lJx"/>
-                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tuners" translatesAutoresizingMaskIntoConstraints="NO" id="C6u-fw-Bzv" userLabel="tunerImage">
                                         <rect key="frame" x="20" y="390" width="240" height="128"/>
@@ -70,33 +64,28 @@
                                         <state key="normal" title="Tuners">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <action selector="tunerToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ajh-Io-wWI"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="uyG-xD-Q9m"/>
                     <connections>
-                        <outlet property="exoticButton" destination="VLI-eE-1K7" id="vJ9-1I-a62"/>
                         <outlet property="exoticImage" destination="D2t-eo-Wvy" id="LOm-qD-LDk"/>
-                        <outlet property="muscleButton" destination="1YN-k1-EKC" id="OwG-Cp-eRR"/>
                         <outlet property="muscleImage" destination="lSo-Dq-j1E" id="S4e-xQ-j6y"/>
                         <outlet property="titleLabel" destination="Fo8-Lb-VuL" id="mH9-bQ-h5P"/>
-                        <outlet property="tunerButton" destination="akf-NK-N8g" id="mbs-If-47Q"/>
                         <outlet property="tunerImage" destination="C6u-fw-Bzv" id="QV9-BH-xVs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="115.94202898550725" y="123.91304347826087"/>
+            <point key="canvasLocation" x="1023.1884057971015" y="123.91304347826087"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="rRk-Km-Yj5">
             <objects>
-                <viewController id="cfb-q8-YzO" sceneMemberID="viewController">
+                <viewController id="cfb-q8-YzO" customClass="SecondViewController" customModule="Homework1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ly8-QB-heN"/>
                         <viewControllerLayoutGuide type="bottom" id="Z8a-eX-EVu"/>
@@ -121,6 +110,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lpj-Eu-VLP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="86" y="-542"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="A5S-SL-gHu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qy8-wk-gec" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8QF-L1-ASa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SeK-Ur-myG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="56K-1F-DOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="123.91304347826087"/>
         </scene>
     </scenes>
     <resources>
