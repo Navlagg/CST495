@@ -10,11 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var tunerButton: UIButton!
+    
     @IBOutlet var tunerImage: UIImageView!
-    @IBOutlet var muscleButton: UIButton!
     @IBOutlet var muscleImage: UIImageView!
-    @IBOutlet var exoticButton: UIButton!
     @IBOutlet var exoticImage: UIImageView!
     @IBOutlet var titleLabel: UILabel!
     override func viewDidLoad() {
@@ -30,11 +28,8 @@ class ViewController: UIViewController {
     }
 
     func elementToggle(toggle: Bool) {
-        tunerButton.isHidden = toggle;
         tunerImage.isHidden = toggle;
-        muscleButton.isHidden = toggle;
         muscleImage.isHidden = toggle;
-        exoticButton.isHidden = toggle;
         exoticImage.isHidden = toggle;
         titleLabel.isHidden = toggle;
     }
