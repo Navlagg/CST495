@@ -75,7 +75,7 @@ class tunerViewController: UIViewController {
     @IBAction func playFRS(_ sender: Any) {
         /// **must** define instance variable outside, because .play() will deallocate AVAudioPlayer
         /// immediately and you won't hear a thing
-        guard let url = Bundle.main.url(forResource: "frs", withExtension: "mp3") else {
+        guard let url = Bundle.main.url(forResource: "frs2", withExtension: "mp3") else {
             print("url not found")
             return
         }
