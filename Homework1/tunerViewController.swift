@@ -12,6 +12,7 @@ import AVFoundation
 class tunerViewController: UIViewController {
     var player : AVAudioPlayer!
 
+    var count = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +24,12 @@ class tunerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func playGTR(_ sender: Any) {
+        if(count == 3){
+            let alert = UIAlertController(title: "Vroom", message: "super fast!", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Whoa", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            count = 0
+        }
         /// **must** define instance variable outside, because .play() will deallocate AVAudioPlayer
         /// immediately and you won't hear a thing
         guard let url = Bundle.main.url(forResource: "gtr", withExtension: "mp3") else {
@@ -31,6 +38,7 @@ class tunerViewController: UIViewController {
         }
         
         do {
+            
             /// this codes for making this app ready to takeover the device audio
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             try AVAudioSession.sharedInstance().setActive(true)
@@ -40,6 +48,7 @@ class tunerViewController: UIViewController {
             
             // no need for prepareToPlay because prepareToPlay is happen automatically when calling play()
             player!.play()
+            count += 1
         } catch let error as NSError {
             print("error: \(error.localizedDescription)")
         }
@@ -48,6 +57,12 @@ class tunerViewController: UIViewController {
     }
     
     @IBAction func playEvo(_ sender: Any) {
+        if(count == 3){
+            let alert = UIAlertController(title: "Vroom", message: "super fast!", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Whoa", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            count = 0
+        }
         /// **must** define instance variable outside, because .play() will deallocate AVAudioPlayer
         /// immediately and you won't hear a thing
         guard let url = Bundle.main.url(forResource: "evo", withExtension: "mp3") else {
@@ -65,6 +80,7 @@ class tunerViewController: UIViewController {
             
             // no need for prepareToPlay because prepareToPlay is happen automatically when calling play()
             player!.play()
+            count += 1
         } catch let error as NSError {
             print("error: \(error.localizedDescription)")
         }
@@ -73,6 +89,13 @@ class tunerViewController: UIViewController {
     }
 
     @IBAction func playFRS(_ sender: Any) {
+        if(count == 3){
+            let alert = UIAlertController(title: "Vroom", message: "super fast!", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Whoa", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            count = 0
+        }
+        
         /// **must** define instance variable outside, because .play() will deallocate AVAudioPlayer
         /// immediately and you won't hear a thing
         guard let url = Bundle.main.url(forResource: "frs2", withExtension: "mp3") else {
@@ -90,6 +113,7 @@ class tunerViewController: UIViewController {
             
             // no need for prepareToPlay because prepareToPlay is happen automatically when calling play()
             player!.play()
+            count += 1
         } catch let error as NSError {
             print("error: \(error.localizedDescription)")
         }

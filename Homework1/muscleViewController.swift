@@ -11,7 +11,7 @@ import AVFoundation
 import AudioToolbox
 
 class muscleViewController: UIViewController {
-
+    var count = 0
     var player : AVAudioPlayer!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +25,12 @@ class muscleViewController: UIViewController {
     }
     
     @IBAction func playHellcat(_ sender: Any) {
+        if(count == 3){
+            let alert = UIAlertController(title: "Vroom", message: "super fast!", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Whoa", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            count = 0
+        }
         guard let url = Bundle.main.url(forResource: "hellcat", withExtension: "mp3") else {
             print("url not found")
             return
@@ -40,12 +46,19 @@ class muscleViewController: UIViewController {
             
             // no need for prepareToPlay because prepareToPlay is happen automatically when calling play()
             player!.play()
+            count += 1
         } catch let error as NSError {
             print("error: \(error.localizedDescription)")
         }
 
     }
     @IBAction func playCamaro(_ sender: Any) {
+        if(count == 3){
+            let alert = UIAlertController(title: "Vroom", message: "super fast!", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Whoa", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            count = 0
+        }
         guard let url = Bundle.main.url(forResource: "camaro", withExtension: "mp3") else {
             print("url not found")
             return
@@ -61,12 +74,19 @@ class muscleViewController: UIViewController {
             
             // no need for prepareToPlay because prepareToPlay is happen automatically when calling play()
             player!.play()
+            count += 1
         } catch let error as NSError {
             print("error: \(error.localizedDescription)")
         }
 
     }
     @IBAction func playMustang(_ sender: Any) {
+        if(count == 3){
+            let alert = UIAlertController(title: "Vroom", message: "super fast!", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Whoa", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            count = 0
+        }
         /// **must** define instance variable outside, because .play() will deallocate AVAudioPlayer
         /// immediately and you won't hear a thing
         guard let url = Bundle.main.url(forResource: "stang", withExtension: "mp3") else {
@@ -84,6 +104,7 @@ class muscleViewController: UIViewController {
             
             // no need for prepareToPlay because prepareToPlay is happen automatically when calling play()
             player!.play()
+            count += 1
         } catch let error as NSError {
             print("error: \(error.localizedDescription)")
         }

@@ -10,13 +10,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Homework1/SecondViewController.swift"
-            timestampString = "527393998.811905"
+            timestampString = "527440778.589531"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "playEnzo(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Homework1/tunerViewController.swift"
+            timestampString = "527440068.520753"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "tunerViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Homework1.tunerViewController.count.setter : Swift.Int"
+                  moduleName = "Homework1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/navlag/Desktop/iOS%20Apps/Homework1/Homework1/tunerViewController.swift"
+                  timestampString = "527440299.162241"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Homework1.tunerViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Homework1.tunerViewController"
+                  moduleName = "Homework1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/navlag/Desktop/iOS%20Apps/Homework1/Homework1/tunerViewController.swift"
+                  timestampString = "527440299.166566"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Homework1.tunerViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Homework1.tunerViewController&gt;"
+                  moduleName = "Homework1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/navlag/Desktop/iOS%20Apps/Homework1/Homework1/tunerViewController.swift"
+                  timestampString = "527440299.170875"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "39">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
